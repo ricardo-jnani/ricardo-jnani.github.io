@@ -40,7 +40,7 @@ $('#view-index').on('click', function (e) {
   e.preventDefault();
   console.log('TURN TO INDEX-VIEW!');
 
-  $('#iceland, #maui').addClass('index-view')
+  $('#iceland, #maui').addClass('index-view');
   $('#view-slide').fadeIn(300);
   $('#view-index').hide(300);
 });
@@ -50,6 +50,13 @@ $('#view-index').on('click', function (e) {
     //Show Slide View Icon
 
 // SLIDE VIEW ICON
+$('view-slide').on('click', function (e){
+  e.preventDefault();
+  console.log('TURN TO SLIDE-VIEW!');
+
+  $('#iceland, #maui').removeClass('index-view');
+  $('')
+});
   //When the user clicks on Slide View Icon
     //Add Class slide-view-style (changing flexbox to have flex-basis=22% & space-between) to all slides
     //Hide Slide View Icon
