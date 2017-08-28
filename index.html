@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Project Aerial</title>
   <meta name="description" content="">
@@ -11,8 +11,6 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -29,12 +27,21 @@
   <nav>
     <a class="hamburger" href=""><i class="fa fa-bars"></i></a>
     <ul>
+      <!-- <img class="logo" src="images/projectaerial-logo.png" alt=""> -->
       <li><a href="#about">About</a></li>
       <li><a href="#iceland">Iceland</a></li>
       <li><a href="#maui">Maui</a></li>
-      <li><a href="#spaces">Spaces</a></li>
-
+      <li><a href="#design">Design</a></li>
     </ul>
+    <article id="view" class="view">
+      <article class="sq-one">+</article>
+      <article class="view" id="view-icon">
+        <article class="sq-two"></article>
+        <article class="sq-two"></article>
+        <article class="sq-two"></article>
+        <article class="sq-two"></article>
+      </article>
+    </article>
   </nav>
 
   <section id="about">
@@ -44,72 +51,119 @@
   </section>
 
   <div id="presentation">
-    <div class="arrows">
-      <i id="up" class="fa fa-long-arrow-up" aria-hidden="true"></i>
-      <i id="down" class="fa fa-long-arrow-down" aria-hidden="true"></i>
-    </div>
-    <div class="view-style">
-      <i id="view-index" class="fa fa-th-large" aria-hidden="true"></i>
-      <i id="view-slide" class="fa fa-th-list" aria-hidden="true"></i>
+    <div id="iceland" class="carousel-wrapper">
+      <div class="arrows">
+        <span id="up1" class="up"></span>
+        <span id="down1" class="down"></span>
+      </div>
+      <section class="full-slides">
+        <div id="iceland-cover" class="intro-slide">
+          <h4>Iceland</h4>
+        </div>
+        <div class="slide"> <!-- slide = flex container -->
+          <img class="imgcard" src="images/iceland_1.jpg" alt="iceland_1"> <!--flex item 1 -->
+          <div class="description"> <!-- flex item 2 -->
+            <h2>Through Iceland</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img class="imgcard" src="images/iceland_2.jpg" alt="iceland_1">
+          <div class="description">
+            <h2>Skogafoss</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img class="imgcard" src="images/iceland_3.jpg" alt="iceland_1">
+          <div class="description">
+            <h2>Vatnajokull</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <section id="iceland">
-      <h4>Iceland</h4>
-      <div class="slide"> <!-- slide = flex container -->
-        <img class="imgcard" src="images/iceland_1.jpg" alt="iceland_1"> <!--flex item 1 -->
-        <div class="description"> <!-- flex item 2 -->
-          <h2>Through Iceland</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
-        </div>
+    <div id="maui" class="carousel-wrapper">
+      <div class="arrows">
+        <span id="up2" class="up"></span>
+        <span id="down2" class="down"></span>
       </div>
-      <div class="slide">
-        <img class="imgcard" src="images/iceland_2.jpg" alt="iceland_1">
-        <div class="description">
-          <h2>Skogafoss</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+      <section class="full-slides">
+        <div id="maui-cover" class="intro-slide">
+          <h4>Maui</h4>
         </div>
-      </div>
-      <div class="slide">
-        <img class="imgcard" src="images/iceland_3.jpeg" alt="iceland_1">
-        <div class="description">
-          <h2>Vatnajokull</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+        <div class="slide">
+          <img class="imgcard" src="images/hawaii_1.jpg" alt="hawaii_1">
+          <div class="description">
+            <h2>Through Hawaii</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+          </div>
         </div>
-      </div>
-    </section>
+        <div class="slide">
+          <img class="imgcard" src="images/hawaii_4.jpg" alt="iceland_1">
+          <div class="description">
+            <h2>Honolua</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img class="imgcard" src="images/hawaii_3.jpg" alt="iceland_1">
+          <div class="description">
+            <h2>Honokahao</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+          </div>
+        </div>
+      </section>
+    </div>
 
-    <section id="maui">
-      <h4>Maui</h4>
-      <div class="slide">
-        <img class="imgcard" src="images/hawaii_1.jpg" alt="hawaii_1">
-        <div class="description">
-          <h2>Through Hawaii</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
-        </div>
+    <div id="design" class="carousel-wrapper">
+      <div class="arrows">
+        <span id="up3" class="up"></span>
+        <span id="down3" class="down"></span>
       </div>
-      <div class="slide">
-        <img class="imgcard" src="images/hawaii_4.jpg" alt="iceland_1">
-        <div class="description">
-          <h2>Honolua</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+      <section class="full-slides">
+        <div id="design-cover" class="intro-slide">
+          <h4>Design</h4>
         </div>
-      </div>
-      <div class="slide">
-        <img class="imgcard" src="images/hawaii_3.jpg" alt="iceland_1">
-        <div class="description">
-          <h2>Honokahao</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+        <div class="slide">
+          <img class="imgcard" src="images/exp_1.jpg" alt="hawaii_1">
+          <div class="description">
+            <h2>Thesis</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+          </div>
         </div>
-      </div>
-    </section>
+        <div class="slide">
+          <img class="imgcard" src="images/exp_2.jpg" alt="iceland_1">
+          <div class="description">
+            <h2>Honolua</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img class="imgcard" src="images/exp_3.jpg" alt="iceland_1">
+          <div class="description">
+            <h2>Honokahao</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi nisi maiores dolor sunt.</p>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
+
 
   <footer>
     <div>
       <p class="copyright">&copy;2017 Ricardo Jnani Gonzalez</p>
     </div>
   </footer>
-  <script src="js/vendor/jquery-1.12.0.min.js"></script>
-  <script src="js/main.js"></script>
+
+  <!-- <div class="arrows">
+  <i id="up" class="fa fa-long-arrow-up" aria-hidden="true"></i>
+  <i id="down" class="fa fa-long-arrow-down" aria-hidden="true"></i>
+</div> -->
+
+<script src="js/vendor/jquery-1.12.0.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
